@@ -6,7 +6,12 @@ class StatusBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey.shade800,
+      decoration: BoxDecoration(
+        color: Colors.grey.shade800,
+        border: const Border(
+          top: BorderSide(width: 1, color: Colors.grey)
+        )
+      ),
       height: 25,
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.end,

@@ -6,7 +6,9 @@ import 'package:resume_pro/src/views/introduction/about_app.dart';
 import 'package:resume_pro/src/views/introduction/about_me.dart';
 import 'package:resume_pro/src/views/projects/dartbucket.dart';
 import 'package:resume_pro/src/views/projects/davfest_portfolio.dart';
+import 'package:resume_pro/src/views/projects/unitron.dart';
 import 'package:resume_pro/src/views/statusbar/status_bar.dart';
+import 'package:resume_pro/src/views/terminal/terminal.dart';
 import 'package:resume_pro/src/views/toolbar/toolbar.dart';
 
 class AppWindow extends StatelessWidget {
@@ -34,6 +36,8 @@ class AppWindow extends StatelessWidget {
                         return const DartBucketProject();
                       case 2:
                         return const DevfestPortfolioProject();
+                      case 3:
+                        return const UnitronProject();
                       default:
                         return const AboutApp();
                     }
@@ -42,6 +46,7 @@ class AppWindow extends StatelessWidget {
               ],
             ),
           ),
+          const Terminal(),
           const StatusBar(),
         ],
       ),

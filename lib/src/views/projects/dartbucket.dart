@@ -20,15 +20,15 @@ class DartBucketProject extends StatelessWidget {
             children: [
               Image.asset(
                 ImageAssets.dartBucketShowcase2,
-                width: 400,
+                height: 400,
               ),
               Image.asset(
                 ImageAssets.dartBucketShowcase1,
-                width: 400,
+                height: 400,
               ),
             ],
           ),
-        ),
+        ), projectUrl: 'https://dartbucket.com',
       ),
     );
   }

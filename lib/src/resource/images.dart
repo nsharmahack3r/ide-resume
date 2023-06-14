@@ -14,7 +14,13 @@ class ImageAssets{
   static const devfestPortfolioShowcase1 = "$_basePath/devfest_app_showcase_1.jpeg";
   static const devfestPortfolioShowcase2 = "$_basePath/devfest_app_showcase_2.jpeg";
 
-
+  static const unitronLogoPng = "$_basePath/unitron_logo.png";
+  static const unitronShowcase1 = "$_basePath/unitron_1.jpeg";
+  static const unitronShowcase2 = "$_basePath/unitron_2.jpeg";
+  static const unitronShowcase3 = "$_basePath/unitron_3.jpeg";
+  static const unitronShowcase4 = "$_basePath/unitron_4.jpeg";
+  static const unitronShowcase5 = "$_basePath/unitron_5.jpeg";
+  static const unitronShowcase6 = "$_basePath/unitron_6.jpeg";
 }
 
 class NetworkImageAssets{

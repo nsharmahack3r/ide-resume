@@ -30,7 +30,7 @@ class DevfestPortfolioProject extends StatelessWidget {
               ),
             ],
           ),
-        ),
+        ), projectUrl: 'https://play.google.com/store/apps/details?id=com.tweakstron.devfest_portfolio_app&hl=en&gl=US',
       ),
     );
   }

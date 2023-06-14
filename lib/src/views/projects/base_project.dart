@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BaseProject extends StatelessWidget {
   const BaseProject({
@@ -7,7 +8,7 @@ class BaseProject extends StatelessWidget {
     required this.tagLine,
     required this.description,
     required this.imageAsset,
-    required this.carousel,
+    required this.carousel, required this.projectUrl,
   });
 
   final String title;
@@ -15,6 +16,7 @@ class BaseProject extends StatelessWidget {
   final String description;
   final String imageAsset;
   final Widget carousel;
+  final String projectUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -38,13 +40,13 @@ class BaseProject extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 36,
                     ),
                   ),
                   Text(
                     tagLine,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                     ),
                   ),
@@ -52,11 +54,29 @@ class BaseProject extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 10,),
           carousel,
-          Text("Description:", style: TextStyle(fontSize: 18),),
-          Text(description, style: TextStyle(fontSize: 18),),
+          const SizedBox(height: 10,),
+          MaterialButton(
+            color: Colors.blueGrey,
+            onPressed: (){
+              launchUrl(Uri.parse(projectUrl));
+            },
+            child: const Text("View")
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Text("Description:", style: TextStyle(fontSize: 18),),
+          Text(description, style: const TextStyle(fontSize: 18),),
         ],
       ),
     );
   }
+
+  Future<void> _launchUrl(Uri url) async {
+  if (!await launchUrl(url)) {
+    //throw Exception('Could not launch $_url');
+  }
+}
 }
