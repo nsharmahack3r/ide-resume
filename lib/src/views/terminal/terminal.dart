@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final terminalStateProvider = StateProvider<bool>((ref) {
-  return true;
+  return false;
 });
 
 class Terminal extends ConsumerWidget {

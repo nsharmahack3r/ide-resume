@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_pro/src/providers/common_providers.dart';
+import 'package:resume_pro/src/views/experiences/hive8.dart';
+import 'package:resume_pro/src/views/experiences/tutorang.dart';
 import 'package:resume_pro/src/views/explorer/explorer.dart';
+import 'package:resume_pro/src/views/extra/community.dart';
+import 'package:resume_pro/src/views/extra/youtube.dart';
 import 'package:resume_pro/src/views/introduction/about_app.dart';
 import 'package:resume_pro/src/views/introduction/about_me.dart';
 import 'package:resume_pro/src/views/projects/dartbucket.dart';
@@ -38,6 +42,14 @@ class AppWindow extends StatelessWidget {
                         return const DevfestPortfolioProject();
                       case 3:
                         return const UnitronProject();
+                      case 4:
+                        return const Hive8Experience();
+                      case 5:
+                        return const TutorangExperience();
+                      case 6:
+                        return const YoutubeExtraFile();
+                      case 7:
+                        return const CommunityExtraFile();
                       default:
                         return const AboutApp();
                     }

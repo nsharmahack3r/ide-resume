@@ -30,8 +30,8 @@ class ExplorerPane extends StatelessWidget {
                 files: ref.watch(experienceFilesProvider),
               ),
               ExplorerItemFolder(
-                title: ExplorerString.educationLabel, 
-                files: ref.watch(educationFilesProvider),
+                title: ExplorerString.extraLabel, 
+                files: ref.watch(extraFilesProvider),
               )
             ],
           );

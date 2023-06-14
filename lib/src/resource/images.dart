@@ -21,6 +21,11 @@ class ImageAssets{
   static const unitronShowcase4 = "$_basePath/unitron_4.jpeg";
   static const unitronShowcase5 = "$_basePath/unitron_5.jpeg";
   static const unitronShowcase6 = "$_basePath/unitron_6.jpeg";
+
+  static const hive8logoPng = "$_basePath/hive_8_logo.png";
+
+  static const tutorangLogo = "$_basePath/tutorang_logo.png";
+  static const speakerShowCase = "$_basePath/speaker_showcase.jpeg";
 }
 
 class NetworkImageAssets{

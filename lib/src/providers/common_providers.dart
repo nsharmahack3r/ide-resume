@@ -10,7 +10,7 @@ final selectedFileIdProvider = StateProvider<int>((ref) => -1);
 final foldersProvider = Provider((ref) => [
   Folder(id: 0, name: ExplorerString.introductionLabel),
   Folder(id: 1, name: ExplorerString.projectsLabel),
-  Folder(id: 2, name: ExplorerString.educationLabel),
+  Folder(id: 2, name: ExplorerString.extraLabel),
   Folder(id: 3, name: ExplorerString.experienceLabel),
 ]);
 
@@ -30,8 +30,7 @@ final experienceFilesProvider = Provider((ref) => [
   ResumeFile(name: 'tutorang.exp', id: 5),
 ]);
 
-final educationFilesProvider = Provider((ref) => [
-  ResumeFile(name: 'graduation.edu', id: 6),
-  ResumeFile(name: 'intermidiate.edu', id: 7),
-  ResumeFile(name: 'highschool.edu', id: 8),
+final extraFilesProvider = Provider((ref) => [
+  ResumeFile(name: 'youtube.extra', id: 6),
+  ResumeFile(name: 'community.extra', id: 7),
 ]);

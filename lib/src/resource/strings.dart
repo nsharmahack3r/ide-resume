@@ -7,7 +7,7 @@ class CommonString{
 class ExplorerString{
   static const introductionLabel = "Introduction";
   static const projectsLabel = "Projects";
-  static const educationLabel = "Education";
+  static const extraLabel = "Extra";
   static const experienceLabel = "Experiences";
 }
 
